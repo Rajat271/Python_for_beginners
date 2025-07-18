@@ -1,0 +1,26 @@
+Assingment-1
+Question--https://www.geeksforgeeks.org/problems/print-alternate-elements-of-an-array/1?page=1&category=Arrays&difficulty=Basic&sortBy=submissions
+def getAlternates(self, arr):
+       l=[]
+       for i in range(len(arr)):
+            if i%2==0:
+                l.append(arr[i])
+            else:
+                continue
+        return l
+
+////////////////////////////////////////////////////////////////////////////
+
+Assingment-2
+Question--https://www.geeksforgeeks.org/problems/count-odd-even/0
+def countOddEven(self, arr):
+		Even_count=0
+		Odd_count=0
+		for i in arr:
+		    if i%2==0:
+		        Even_count+=1
+		    else:
+		        Odd_count+=1
+		return Odd_count,Even_count
+//////////////////////////////////////////////////////////////////////////
+
