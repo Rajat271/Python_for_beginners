@@ -1,0 +1,16 @@
+Assingment--1
+Question--https://www.geeksforgeeks.org/problems/sum-of-series2811/0
+Solution--
+def findSum(self, n):
+        if n==0:
+            return 0
+        return n*(n+1)//2
+///////////////////////////////////////////////////////////////////////
+Assingment--2
+Question--https://www.geeksforgeeks.org/problems/sum-of-array2326/0
+Solution--
+def arraySum(self, arr):
+   		res=0
+   		for i in arr:
+   		    res=res+i
+   		return res
