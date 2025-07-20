@@ -1,0 +1,22 @@
+Assingment--1
+Question--https://www.geeksforgeeks.org/problems/largest-element-in-array4009/0
+Solution
+    def largest(self, arr):
+        res=float('-inf')
+        for i in arr:
+            if i>res:
+                res=i
+                
+        return res
+/////////////////////////////////////////////////////////////////////////////////
+Assingment--2
+Question--https://www.geeksforgeeks.org/problems/searching-a-number0324/0
+Solution
+    def search(self, k: int, arr: List[int]) -> int:
+        for i in range(len(arr)):
+            if arr[i]==k:
+                res=i+1
+                break
+            else:
+                res=-1
+        return res
