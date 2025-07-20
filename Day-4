@@ -1,0 +1,29 @@
+Assingment--1
+Question--https://www.geeksforgeeks.org/problems/find-the-camel3348/0
+Solution
+ def countCamelCase (self,s):
+        upper_count=0
+        for char in s:
+            if ord(char)>=65 and ord(char)<=90:
+                upper_count=upper_count+1
+        return upper_count
+////////////////////////////////////////////////////////////////////
+
+Assingment--2
+Question--https://www.geeksforgeeks.org/problems/count-type-of-characters3635/0
+Solution
+    def count (self,s):
+        upper_count=0
+        lower_count=0
+        num_count=0
+        special_char_count=0
+        for char in s:
+            if ord(char)>=65 and ord(char)<=90:
+                upper_count=upper_count+1
+            elif ord(char)>=97 and ord(char)<=122:
+                lower_count=lower_count+1
+            elif ord(char)>=48 and ord(char)<=57:
+                num_count=num_count+1
+            else:
+                special_char_count+=1
+        return upper_count,lower_count,num_count,special_char_count
