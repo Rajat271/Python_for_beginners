@@ -1,0 +1,24 @@
+Assingment-1
+Question--https://www.geeksforgeeks.org/problems/replace-all-0s-with-5/0
+ def convertFive(self, n):
+        res=""
+        l=list(str(n))
+            
+        for char in range(len(l)):
+            if l[char]=='0':
+                  l[char]='5'
+            final=''.join(l)
+            
+        return final
+learning: Integer numbers are not iterable so convert that into string also string is not mutable so convert that into list and at the end use join to convert again into string
+////////////////////////////////////////////////////////////
+Assingment-2
+Question--https://www.geeksforgeeks.org/problems/change-the-string3541/0
+ def modify(self, s):
+       
+        if s[0]==s[0].lower():
+            final=s.lower()
+        elif s[0]==s[0].upper():
+            final=s.upper()
+        return final
+/////////////////////////////////////////////////////////
