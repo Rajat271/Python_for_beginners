@@ -1,0 +1,21 @@
+Assingment--1
+Question--https://www.geeksforgeeks.org/problems/check-if-a-string-is-isogram-or-not-1587115620/0
+Solution
+def isIsogram(self,s):
+        res={}
+        for char in s:
+            if char in res:
+                return False
+            else:
+                res[char]=1
+        return True
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+Assingment--2
+Questions--https://www.geeksforgeeks.org/problems/java-delete-alternate-characters4036/0
+Soultion
+    def delAlternate (ob, S):
+        res=""
+        for char in range(len(S)):
+            if char%2==0:
+                res=res+S[char]
+        return res
