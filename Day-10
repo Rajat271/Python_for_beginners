@@ -1,0 +1,30 @@
+Assingment--1
+Question--https://www.geeksforgeeks.org/problems/repeated-character2058/0
+Solution
+def firstRep(self, s):
+        dic={}
+        for i in s:
+            if i in dic:
+                dic[i]+=1
+            else:
+                dic[i]=1
+        for key,value in dic.items():
+            if value>1:
+                return key
+        return '#'
+Learning--Hoe to fetch data from dict
+//////////////////////////////////////////////////////////////////////////////////
+Assingment--2
+Question--https://www.geeksforgeeks.org/problems/non-repeating-character-1587115620/1?page=1&category=Strings&difficulty=Easy&status=solved&sortBy=submissions
+Solution
+def nonRepeatingChar(self,s):
+        dic={}
+        for char in s:
+            if char in dic:
+                dic[char]+=1
+            else:
+                dic[char]=1
+        for key,value in dic.items():
+            if value==1:
+                return key
+        return "$"
