@@ -1,0 +1,14 @@
+Assingment--1
+Question--https://www.geeksforgeeks.org/problems/java-reverse-a-string0416/0
+Solution
+def revStr (self, s : str) -> str :
+        l=list(s)
+        i=0
+        j=len(l)-1
+        while i<j:
+            l[i],l[j]=l[j],l[i]
+            i=i+1
+            j=j-1
+        return ''.join(l)
+Learning--two pointer technique
+//////////////////////////////////////////////////////////////////////////////////////////////////
