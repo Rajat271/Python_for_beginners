@@ -1,0 +1,19 @@
+Assingment--1
+Questions--https://www.geeksforgeeks.org/problems/prime-number2314/0
+Solution
+def isPrime(self, n):
+        if n==1:
+            return False
+        
+        for i in range(2,n//2):
+            if n%i==0:
+                return False
+        return True
+//////////////////////////////////////////////////////////////////////////////////////////
+Assingment--2
+Question--https://www.geeksforgeeks.org/problems/swap-kth-elements5500/0
+Solution
+def swapKth(self, arr, k):
+        x=len(arr)
+        arr[k-1],arr[x-k]=arr[x-k],arr[k-1]
+        return arr
