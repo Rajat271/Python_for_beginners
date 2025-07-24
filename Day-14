@@ -1,0 +1,44 @@
+Assingment--1
+Question--https://www.geeksforgeeks.org/problems/check-for-subsequence4930/0
+Solution
+def isSubSequence(self, A, B):
+        start=0
+        count=0
+        for i in range(len(A)):
+            if start<len(B):
+                for j in range(start,len(B)):
+                    if A[i]==B[j]:
+                        count+=1
+                        start=j+1
+                        break
+                    else:
+                        continue
+        if len(A)==count:
+            return 1
+        else:
+            return 0
+learning--logic understanding
+/////////////////////////////////////////////////////////////////////////////////////
+Assingment--2
+Question--https://www.geeksforgeeks.org/problems/remove-common-characters-and-concatenate-1587115621/0
+Solution
+
+    #Function to remove common characters and concatenate two strings.
+    def concatenatedString(self,s1,s2):
+        sf1=""
+        sf2=""
+        s=""
+        for i in s1:
+            if i in s2:
+                continue
+            else:
+                sf1=sf1+i
+        for j in s2:
+            if j in s1:
+                continue
+            else:
+                sf2=sf2+j
+        if len(sf1+sf2)==0:
+            return -1
+        else:
+            return sf1+sf2
