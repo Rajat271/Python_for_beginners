@@ -1,0 +1,18 @@
+Assingment--1
+Question--https://www.geeksforgeeks.org/problems/find-the-odd-occurence4820/1?page=1&category=Arrays&difficulty=Basic&status=unsolved&sortBy=submissions
+Solution
+def getOddOccurrence(self, arr):
+        dict={}
+        for i in arr:
+            if i in dict:
+                dict[i]+=1
+            else:
+                dict[i]=1
+        for key,value in dict.items():
+            if value%2!=0:
+                return key
+                
+        return -1
+learning---used dict concept
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
