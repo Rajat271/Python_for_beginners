@@ -1,0 +1,34 @@
+Assingment--1
+Question--
+Solution
+def convert(self, s):
+        flag=True
+        s1=""
+        for i in s:
+            if flag==True:
+                s1=s1+i.upper()
+                flag=False
+            else:
+                if i==" ":
+                    s1=s1+" "
+                    flag=True
+                else:
+                    s1=s1+i
+                    flag=False
+        return s1
+learning--Use of flag variable
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+Assingment--2
+Question--https://www.geeksforgeeks.org/problems/convert-a-list-of-characters-into-a-string5142/0
+Solution
+s1="".join(arr)
+        return s1
+        
+        # s1=""
+        # for i in range(len(arr)):
+        #     if arr[i]==" ":
+        #         skip
+        #     else:
+        #         s1=s1+arr[i]
+        # return s1
