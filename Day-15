@@ -1,0 +1,17 @@
+Assingment--1
+Question--https://www.geeksforgeeks.org/problems/print-1-to-n-without-using-loops-1587115620/0
+Solution
+def printNos(self,n):
+        if n==0:
+            return 
+        self.printNos(n-1)
+        print(n,end=" ")
+ascending
+def printNos(self,n):
+        if n==0:
+            return 
+        print(n,end=" ")
+        self.printNos(n-1)
+descending
+learning--recurrsion concept both ascending and descending
+///////////////////////////////////////////////////////////////////////
